@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>ReName - Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path
+              d="M390-240v-140h-60v-144q0-23 31.5-39.5T440-580q47 0 78.5 16.5T550-524v144h-60v140H390Zm50-360q-26 0-43-17t-17-43q0-26 17-43t43-17q26 0 43 17t17 43q0 26-17 43t-43 17Zm0 480q-150 0-255-105T80-480q0-75 28.5-140.5t77-114q48.5-48.5 114-77T440-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T800-480v8l73-74 57 56-170 170-170-170 57-56 73 73v-7q0-116-82-198t-198-82q-116 0-198 82t-82 198q1 116 82.5 198T440-200q57 0 107-21.5t88-58.5l57 57q-49 48-113.5 75.5T440-120Z"
+            />
+          </svg>
+          <h1>ReName</h1>
+        </a>
+        <ul class="nav-links">
+          <li><a href="" class="nav-link">Female Names</a></li>
+          <li><a href="" class="nav-link">Male Names</a></li>
+          <li><p>by Crowlog</p></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card-stack container-item">
+          <div class="card">
+            <div class="card-container">
+              <h2 id="name_h">Name</h2>
+              <h3>Meaning</h3>
+              <p id="meaning_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eos nemo quaerat numquam sed adipisci
+                blanditiis sapiente perferendis nam quisquam?
+              </p>
+              <h3>Origin</h3>
+              <p id="origin_p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam illo minima unde amet
+                consequuntur temporibus atque aspernatur, architecto alias illum incidunt, perspiciatis enim et!
+              </p>
+              <div class="card-buttons-search">
+                <button id="button-meaning">Search Meaning</button>
+                <button id="button-origin">Search Origin</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="button-dislike" class="card-button-vote container-item">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520q-17 0-28.5-11.5T160-760q0-17 11.5-28.5T200-800h160q0-17 11.5-28.5T400-840h160q17 0 28.5 11.5T600-800h160q17 0 28.5 11.5T800-760q0 17-11.5 28.5T760-720v520q0 33-23.5 56.5T680-120H280Zm120-160q17 0 28.5-11.5T440-320v-280q0-17-11.5-28.5T400-640q-17 0-28.5 11.5T360-600v280q0 17 11.5 28.5T400-280Zm160 0q17 0 28.5-11.5T600-320v-280q0-17-11.5-28.5T560-640q-17 0-28.5 11.5T520-600v280q0 17 11.5 28.5T560-280Z"
+            />
+          </svg>
+        </button>
+        <button id="button-like" class="card-button-vote container-item">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path
+              d="M480-147q-14 0-28.5-5T426-168l-69-63q-106-97-191.5-192.5T80-634q0-94 63-157t157-63q53 0 100 22.5t80 61.5q33-39 80-61.5T660-854q94 0 157 63t63 157q0 115-85 211T602-230l-68 62q-11 11-25.5 16t-28.5 5Z"
+            />
+          </svg>
+        </button>
+        <div class="card-names container-item">
+          <div class="card card-dislikes">
+            <h3>Names you disliked</h3>
+            <ul id="dislikes_list"></ul>
+          </div>
+        </div>
+        <div class="card-names container-item">
+          <div class="card card-likes">
+            <h3>Names you liked</h3>
+            <ul id="likes_list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="data-buttons">
+      <button id="button-generate">Generate</button>
+      <button id="button-export">Export</button>
+      <label id="button-import">
+        Import
+        <input type="file" id="file-input" />
+      </label>
+    </footer>
+    <script src="../js/script.js" type="module"></script>
+  </body>
+</html>
