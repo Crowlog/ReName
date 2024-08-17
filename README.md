@@ -1,6 +1,6 @@
 <h1>ReName</h1>
 <h3>A small website I made for finding a new name</h3>
-<p>Visit the website: <a></a></p>
+<p>Visit the website: <a href="https://crowlog.github.io/ReName/">https://crowlog.github.io/ReName/</a></p>
 <br>
 
 <h2>Features</h2>
