@@ -17,72 +17,96 @@
           </svg>
           <h1>ReName</h1>
         </a>
-        <ul class="nav-links">
-          <li><a href="" class="nav-link">Female Names</a></li>
-          <li><a href="" class="nav-link">Male Names</a></li>
-          <li><p>by Crowlog</p></li>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <select name="gender" id="gender-select" class="nav-select">
+              <option value="0" class="nav-option">-- Select Gender --</option>
+              <option value="male" class="nav-option">Male</option>
+              <option value="female" class="nav-option">Female</option>
+              <option value="0" class="nav-option">Neutral</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <select name="generator" id="generator-select" class="nav-select">
+              <option value="0" class="nav-option">-- Select Generator --</option>
+              <option value="weighted" class="nav-option">Weighted List</option>
+              <option value="faker" class="nav-option">Faker</option>
+              <option value="list" class="nav-option">Big Chungus</option>
+            </select>
+          </li>
+          <li class="nav-item"><a href="https://github.com/crowlog" target="_blank">by Crowlog</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="container">
-        <div class="card-stack container-item">
-          <div class="card">
-            <div class="card-container">
-              <h2 id="name_h">Name</h2>
-              <h3>Meaning</h3>
-              <p id="meaning_p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eos nemo quaerat numquam sed adipisci
-                blanditiis sapiente perferendis nam quisquam?
-              </p>
-              <h3>Origin</h3>
-              <p id="origin_p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam illo minima unde amet
-                consequuntur temporibus atque aspernatur, architecto alias illum incidunt, perspiciatis enim et!
-              </p>
-              <div class="card-buttons-search">
-                <button id="button-meaning">Search Meaning</button>
-                <button id="button-origin">Search Origin</button>
-              </div>
+    <div class="content">
+      <main>
+        <div class="container">
+          <div class="card container-item">
+            <h2 id="name">Name</h2>
+            <h3>Meaning</h3>
+            <p id="meaning">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eos nemo quaerat numquam sed adipisci
+              blanditiis sapiente perferendis nam quisquam?
+            </p>
+            <h3>Origin</h3>
+            <p id="origin">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam illo minima unde amet consequuntur
+              temporibus atque aspernatur, architecto alias illum incidunt, perspiciatis enim et!
+            </p>
+            <div class="search-container">
+              <button id="btn-meaning">Search Meaning</button>
+              <button id="btn-origin">Search Origin</button>
             </div>
           </div>
-        </div>
-        <button id="button-dislike" class="card-button-vote container-item">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-            <path
-              d="M280-120q-33 0-56.5-23.5T200-200v-520q-17 0-28.5-11.5T160-760q0-17 11.5-28.5T200-800h160q0-17 11.5-28.5T400-840h160q17 0 28.5 11.5T600-800h160q17 0 28.5 11.5T800-760q0 17-11.5 28.5T760-720v520q0 33-23.5 56.5T680-120H280Zm120-160q17 0 28.5-11.5T440-320v-280q0-17-11.5-28.5T400-640q-17 0-28.5 11.5T360-600v280q0 17 11.5 28.5T400-280Zm160 0q17 0 28.5-11.5T600-320v-280q0-17-11.5-28.5T560-640q-17 0-28.5 11.5T520-600v280q0 17 11.5 28.5T560-280Z"
-            />
-          </svg>
-        </button>
-        <button id="button-like" class="card-button-vote container-item">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-            <path
-              d="M480-147q-14 0-28.5-5T426-168l-69-63q-106-97-191.5-192.5T80-634q0-94 63-157t157-63q53 0 100 22.5t80 61.5q33-39 80-61.5T660-854q94 0 157 63t63 157q0 115-85 211T602-230l-68 62q-11 11-25.5 16t-28.5 5Z"
-            />
-          </svg>
-        </button>
-        <div class="card-names container-item">
-          <div class="card card-dislikes">
+          <button id="btn-dislike" class="btn-vote container-item">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#FFFFFF"
+            >
+              <path
+                d="M280-120q-33 0-56.5-23.5T200-200v-520q-17 0-28.5-11.5T160-760q0-17 11.5-28.5T200-800h160q0-17 11.5-28.5T400-840h160q17 0 28.5 11.5T600-800h160q17 0 28.5 11.5T800-760q0 17-11.5 28.5T760-720v520q0 33-23.5 56.5T680-120H280Zm120-160q17 0 28.5-11.5T440-320v-280q0-17-11.5-28.5T400-640q-17 0-28.5 11.5T360-600v280q0 17 11.5 28.5T400-280Zm160 0q17 0 28.5-11.5T600-320v-280q0-17-11.5-28.5T560-640q-17 0-28.5 11.5T520-600v280q0 17 11.5 28.5T560-280Z"
+              />
+            </svg>
+          </button>
+          <button id="btn-like" class="btn-vote container-item">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#FFFFFF"
+            >
+              <path
+                d="M480-147q-14 0-28.5-5T426-168l-69-63q-106-97-191.5-192.5T80-634q0-94 63-157t157-63q53 0 100 22.5t80 61.5q33-39 80-61.5T660-854q94 0 157 63t63 157q0 115-85 211T602-230l-68 62q-11 11-25.5 16t-28.5 5Z"
+              />
+            </svg>
+          </button>
+          <div id="name-dislikes" class="card-names container-item">
             <h3>Names you disliked</h3>
-            <ul id="dislikes_list"></ul>
+            <ul id="dislikes-list"></ul>
           </div>
-        </div>
-        <div class="card-names container-item">
-          <div class="card card-likes">
+          <div id="name-likes" class="card-names container-item">
             <h3>Names you liked</h3>
-            <ul id="likes_list"></ul>
+            <ul id="likes-list"></ul>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="data-buttons">
-      <button id="button-generate">Generate</button>
-      <button id="button-export">Export</button>
-      <label id="button-import">
-        Import
-        <input type="file" id="file-input" />
-      </label>
-    </footer>
+      </main>
+      <footer>
+        <div class="data-container">
+          <label id="btn-import" class="btn-data">
+            Import
+            <input type="file" name="file" id="file-input" />
+          </label>
+          <label id="btn-export" class="btn-data">Export</label>
+          <label id="btn-generate" class="btn-data">Generate</label>
+        </div>
+      </footer>
+    </div>
     <script src="../js/script.js" type="module"></script>
   </body>
 </html>
