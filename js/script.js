@@ -1,4 +1,4 @@
-import { faker } from "https://esm.sh/@faker-js/faker/locale/de";
+import { faker } from '@faker-js/faker';
 import { male_names } from "./names.js";
 import { male_weights } from "./names.js";
 import { male_name_total } from "./names.js";
